@@ -11,6 +11,8 @@ client = discord.Client(intents=intents)
 
 years_ = ['2017','2018']
 
+텍스트 = ["계좌 문의 드립니다.","계좌 있으신가요?"]
+
 @client.event 
 async def on_member_join(member):
     date = datetime.datetime.utcfromtimestamp(((int(member.id) >> 22) + 1420070400000) / 1000)
